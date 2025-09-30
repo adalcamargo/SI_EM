@@ -31,38 +31,49 @@
     <x-slot name="header">
         <style>
             body {
-                background-color: #5E1200;
+                background-color: #5A0F00; /* Rojo oscuro más elegante */
                 font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
             }
 
             .dashboard-header {
-                background-color: #00401C;
+                background-color: #00381A; /* Verde oscuro */
                 color: #FFFFFF;
-                padding: 15px 20px;
-                border-radius: 10px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
 
             .dashboard-header h2 {
                 margin: 0;
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: bold;
+                letter-spacing: 1px;
             }
 
             .dashboard-card {
                 background: #FFFFFF;
                 border-radius: 15px;
-                padding: 25px;
-                box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+                box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .dashboard-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
             }
 
             .dashboard-card h3 {
-                margin-bottom: 15px;
-                color: #5E1200;
-                border-bottom: 2px solid #00401C;
-                padding-bottom: 8px;
+                margin-bottom: 20px;
+                color: #5A0F00; /* Rojo oscuro */
+                border-bottom: 3px solid #00381A; /* Línea verde */
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-weight: bold;
             }
 
             .user-table {
@@ -70,39 +81,50 @@
                 border-collapse: collapse;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
             }
 
             .user-table thead {
-                background-color: #00401C;
+                background-color: #00381A; /* Verde oscuro */
                 color: #FFFFFF;
                 text-align: left;
             }
 
             .user-table th,
             .user-table td {
-                padding: 12px 15px;
+                padding: 15px;
                 border-bottom: 1px solid #ddd;
             }
 
             .user-table tbody tr:nth-child(even) {
-                background-color: #f4f4f4;
+                background-color: #f9f9f9; /* Blanco suave */
             }
 
             .user-table tbody tr:hover {
-                background-color: #e6f0ea;
+                background-color: #eaf4ec; /* Verde claro */
                 transform: scale(1.01);
                 transition: all 0.2s ease-in-out;
             }
 
             .user-table th {
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: bold;
+                text-transform: uppercase;
             }
 
             .user-table td {
                 font-size: 14px;
                 color: #333;
+            }
+
+            .user-table td p {
+                margin: 0;
+                font-weight: bold;
+                color: #5A0F00; /* Rojo oscuro */
+            }
+
+            .user-table td p:nth-child(2) {
+                color: #00381A; /* Verde oscuro */
             }
         </style>
 

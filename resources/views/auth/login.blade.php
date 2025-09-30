@@ -1,51 +1,65 @@
 <style>
     body {
-        background-color: #00401C;
-        font-family: Arial, sans-serif;
+        background-color: #00381A; /* Color ligeramente más oscuro */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 
     .login-container {
         max-width: 400px;
-        margin: 50px auto;
-        background: #FFFFFF;
+        background: #F9F9F9; /* Blanco ligeramente grisáceo */
         border-radius: 15px;
         padding: 30px;
-        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
     }
 
     .login-container h2 {
         text-align: center;
-        color: #00401C;
-        margin-bottom: 20px;
+        color: #00381A; /* Verde más oscuro */
+        margin-bottom: 25px;
+        font-size: 24px;
+        font-weight: bold;
     }
 
     .form-label {
         display: block;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
         font-weight: bold;
-        color: #00401C;
+        color: #00381A;
+        font-size: 14px;
     }
 
     .form-input {
         width: 100%;
-        padding: 10px;
-        border: 1px solid #00401C;
+        padding: 12px;
+        border: 1px solid #00381A;
         border-radius: 8px;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         font-size: 14px;
-        background-color: #00401C;
-        color: #FFFFFF;
-        transition: all 0.3s;
+        background-color: #00381A; /* Verde oscuro */
+        color: #F9F9F9; /* Blanco suave */
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
 
     .form-input:focus {
-        border-color: #00401C;
+        border-color: #002D14; /* Verde más oscuro */
         outline: none;
-        box-shadow: 0 0 6px rgba(94, 18, 0, 0.6);
+        box-shadow: 0 0 8px rgba(0, 56, 26, 0.5);
     }
 
     .form-error {
-        color: #00401C;
+        color: #00381A;
         font-size: 13px;
         margin-top: -8px;
         margin-bottom: 10px;
@@ -55,46 +69,52 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
     }
 
     .form-footer a {
         font-size: 13px;
-        color: #00401C;
+        color: #00381A;
         text-decoration: none;
         font-weight: bold;
+        transition: color 0.3s;
     }
 
     .form-footer a:hover {
+        color: #002D14;
         text-decoration: underline;
     }
 
     .btn-submit {
-        background-color: #00401C;
-        color: #FFFFFF;
-        padding: 10px 20px;
+        background-color: #00381A;
+        color: #F9F9F9;
+        padding: 12px 25px;
         border: none;
         border-radius: 8px;
         font-weight: bold;
         cursor: pointer;
-        transition: background 0.3s;
+        font-size: 14px;
+        transition: background-color 0.3s, transform 0.2s;
     }
 
     .btn-submit:hover {
-        background-color: #003318;
+        background-color: #002D14;
+        transform: scale(1.05);
     }
 
     .logo {
         display: block;
         margin: 0 auto 20px auto;
-        max-width: 400px;
+        max-width: 100%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .logo:hover {
-        transform: scale(1.05);
+        transform: scale(1.08);
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
     }
 </style>
 

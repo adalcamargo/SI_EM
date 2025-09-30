@@ -19,80 +19,99 @@
     <x-slot name="header">
         <style>
             body {
-                background-color: #5E1200;
+                background-color: #5E1200; /* Rojo oscuro */
                 font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
             }
 
             .dashboard-header {
-                background-color: #00401C;
+                background-color: #00401C; /* Verde oscuro */
                 color: #FFFFFF;
-                padding: 15px 20px;
-                border-radius: 10px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
 
             .dashboard-header h2 {
                 margin: 0;
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: bold;
+                letter-spacing: 1px;
             }
 
             .dashboard-card {
                 background: #FFFFFF;
                 border-radius: 15px;
-                padding: 25px;
-                box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+                padding: 30px;
+                box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .dashboard-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
             }
 
             .dashboard-card h3 {
                 margin-bottom: 20px;
-                color: #5E1200;
-                border-bottom: 2px solid #00401C;
-                padding-bottom: 8px;
+                color: #5E1200; /* Rojo oscuro */
+                border-bottom: 3px solid #00401C; /* Línea verde */
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-weight: bold;
             }
 
             /* Estilos del formulario */
             .dashboard-card input,
             .dashboard-card select {
                 width: 100%;
-                padding: 10px 12px;
+                padding: 12px 15px;
                 margin-bottom: 15px;
                 border-radius: 8px;
                 border: 1px solid #00401C;
                 font-size: 14px;
+                background-color: #F9F9F9; /* Blanco suave */
+                transition: border-color 0.3s, box-shadow 0.3s;
             }
 
             .dashboard-card input:focus,
             .dashboard-card select:focus {
                 outline: none;
-                border-color: #5E1200;
-                box-shadow: 0 0 5px #5E1200;
+                border-color: #5E1200; /* Rojo oscuro */
+                box-shadow: 0 0 8px rgba(94, 18, 0, 0.5);
             }
 
             .dashboard-card label {
                 font-weight: bold;
-                color: #00401C;
+                color: #00401C; /* Verde oscuro */
                 display: block;
-                margin-bottom: 5px;
+                margin-bottom: 8px;
             }
 
             .dashboard-card button {
-                background-color: #00401C;
+                background-color: #00401C; /* Verde oscuro */
                 color: #FFFFFF;
                 padding: 12px 25px;
                 border: none;
                 border-radius: 10px;
                 font-weight: bold;
                 cursor: pointer;
-                transition: all 0.3s ease;
+                font-size: 14px;
+                transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
             }
 
             .dashboard-card button:hover {
-                background-color: #005f2c;
+                background-color: #005F2C; /* Verde más claro */
                 transform: translateY(-2px);
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .form-footer {
+                text-align: center;
+                margin-top: 20px;
             }
         </style>
 
